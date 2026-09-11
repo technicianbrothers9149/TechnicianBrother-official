@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="google-site-verification" content="sWTvQiQaJcIUJZ6LOz5LONxHfPGgtCcjFRKgHVPOZ9Y" />
 
 <meta charset="UTF-8">
 
@@ -705,4 +706,1357 @@ footer a{
     }
 
     .features{
-        grid-template-columns:
+        grid-template-columns:1fr 1fr;
+    }
+
+    .guides{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:50px 0;
+    }
+
+}
+
+
+/* VERY SMALL PHONES */
+
+@media(max-width:380px){
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+
+<!-- =========================
+     STRUCTURED DATA
+========================= -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeAndConstructionBusiness",
+  "name":"Technician Brother",
+  "url":"https://technicianbrother9149.github.io/TechnicianBrother-Official/",
+  "description":"Home appliance service information for Jammu.",
+  "areaServed":{
+    "@type":"City",
+    "name":"Jammu"
+  },
+  "serviceType":[
+    "AC Repair",
+    "AC Service",
+    "AC Installation",
+    "Fridge Repair",
+    "Cooler Repair",
+    "Washing Machine Repair",
+    "RO Service",
+    "CCTV Installation",
+    "House Wiring",
+    "Geyser Service"
+  ]
+}
+</script>
+
+</head>
+
+
+<body>
+<a href="https://github.com/technicianbrother9149/TechnicianBrother-Official/raw/refs/heads/main/TechnicianBrotherJammu-v2.apk">
+  📱 Download Technician Brother App
+</a>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="container header">
+
+<a href="#home" class="logo">
+Technician <span>Brother</span>
+</a>
+
+<input
+type="search"
+id="searchBox"
+class="search"
+placeholder="Search AC, Fridge..."
+onkeyup="searchSite()"
+>
+
+<nav class="nav">
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#buy-sell">Buy & Sell</a>
+<a href="#products">Products</a>
+<a href="#guides">Guides</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="badge">
+Jammu Home Appliance Services
+</div>
+
+<h1>
+AC Repair & Home Appliance
+<span>Services in Jammu</span>
+</h1>
+
+<p>
+Technician Brother provides home appliance service information
+for AC repair, AC service, AC installation, fridge repair,
+cooler repair, washing machine repair, RO service,
+CCTV, house wiring and geyser services in Jammu.
+</p>
+
+<div class="buttons">
+
+<a href="#services" class="btn btn-primary">
+View Services
+</a>
+
+<a href="#contact" class="btn btn-dark">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Services in Jammu</h2>
+
+<p>
+Tap a service to see complete details
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<div class="service-card"
+onclick="openService('ac')">
+
+<div class="service-icon">❄️</div>
+
+<h3>AC</h3>
+
+<p>Window AC & Split AC</p>
+
+</div>
+
+
+<div class="service-card"
+onclick="openService('fridge')">
+
+<div class="service-icon">🧊</div>
+
+<h3>Fridge</h3>
+
+<p>All Type Repairing</p>
+
+</div>
+
+
+<div class="service-card"
+onclick="openService('cooler')">
+
+<div class="service-icon">💨</div>
+
+<h3>Cooler</h3>
+
+<p>All Type Repairing</p>
+
+</div>
+
+
+<div class="service-card"
+onclick="openService('washing')">
+
+<div class="service-icon">🧺</div>
+
+<h3>Washing Machine</h3>
+
+<p>All Type Repairing</p>
+
+</div>
+
+
+<div class="service-card"
+onclick="openService('ro')">
+
+<div class="service-icon">💧</div>
+
+<h3>RO</h3>
+
+<p>Service & Repair</p>
+
+</div>
+
+
+<div class="service-card"
+onclick="openService('cctv')">
+
+<div class="service-icon">📹</div>
+
+<h3>Cameras</h3>
+
+<p>CCTV Installation & Repair</p>
+
+</div>
+
+
+<div class="service-card"
+onclick="openService('wiring')">
+
+<div class="service-icon">⚡</div>
+
+<h3>House Wiring</h3>
+
+<p>Electrical Services</p>
+
+</div>
+
+
+<div class="service-card"
+onclick="openService('geyser')">
+
+<div class="service-icon">🔥</div>
+
+<h3>Geyser</h3>
+
+<p>Repair, Installation & Service</p>
+
+</div>
+
+
+</div>
+
+
+<!-- SERVICE DETAILS -->
+
+<div id="serviceDetails"
+class="service-details">
+
+<h2 id="detailTitle">
+Service Details
+</h2>
+
+<div id="detailContent"></div>
+
+<button
+class="close-btn"
+onclick="closeService()">
+Close
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LOCAL SEO CONTENT
+========================= -->
+
+<section class="local-section">
+
+<div class="container">
+
+<div class="local-content">
+
+<h2>
+Technician Brother – Home Appliance Services in Jammu
+</h2>
+
+<p>
+Looking for AC repair in Jammu, fridge repair in Jammu,
+cooler service, washing machine repair, RO service,
+CCTV services, house wiring or geyser service?
+Technician Brother brings these service categories together
+in one place.
+</p>
+
+
+<h3>AC Repair in Jammu</h3>
+
+<p>
+Our AC service section covers Window AC and Split AC,
+including service, installation, repairing, deep service,
+gas refilling and PCB repairing.
+</p>
+
+
+<h3>Fridge Repair in Jammu</h3>
+
+<p>
+Information for non-inverter and inverter refrigerators,
+single-door and double-door fridges and general refrigerator
+repairing services.
+</p>
+
+
+<h3>Washing Machine Repair in Jammu</h3>
+
+<p>
+Our washing machine section covers automatic,
+semi-automatic, fully automatic, inverter and non-inverter
+washing machines with all-type repairing information.
+</p>
+
+
+<h3>RO, CCTV, Cooler and Geyser Services</h3>
+
+<p>
+Technician Brother also covers RO servicing and installation,
+CCTV camera installation and repair, all-type cooler repairing,
+and geyser repairing, installation and servicing.
+</p>
+
+
+<h3>House Wiring and Installation Services</h3>
+
+<p>
+The electrical services section includes inverter installation,
+solar installation and house wiring information.
+For electrical work, use a qualified professional.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     BUY & SELL
+========================= -->
+
+<section id="buy-sell">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Buy & Sell Home Appliances</h2>
+
+<p>
+AC, Fridge, Cooler and Washing Machine
+</p>
+
+</div>
+
+
+<div class="buy-sell">
+
+
+<!-- BUY -->
+
+<div class="buy-box">
+
+<h3>🛒 Buy</h3>
+
+<p>
+Buy or enquire about AC, fridge, cooler and
+washing machine products.
+</p>
+
+<label class="upload-label">
+
+Select Product Photo
+
+<input
+type="file"
+accept="image/*"
+capture="environment"
+onchange="previewImage(event,'buyPreview')"
+>
+
+</label>
+
+<img
+id="buyPreview"
+class="upload-preview"
+alt="Selected product photo"
+>
+
+<button
+class="btn btn-primary"
+onclick="buyProduct()">
+
+Contact to Buy
+
+</button>
+
+</div>
+
+
+<!-- SELL -->
+
+<div class="sell-box">
+
+<h3>🏷️ Sell</h3>
+
+<p>
+Want to sell an AC, fridge, cooler or washing machine?
+Select the product photo first.
+</p>
+
+<label class="upload-label">
+
+Upload Product Photo
+
+<input
+type="file"
+accept="image/*"
+capture="environment"
+onchange="previewImage(event,'sellPreview')"
+>
+
+</label>
+
+<img
+id="sellPreview"
+class="upload-preview"
+alt="Selected product photo"
+>
+
+<button
+class="btn btn-primary"
+onclick="sellProduct()">
+
+Submit Product
+
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section id="products">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Home Appliances</h2>
+
+<p>
+Featured categories
+</p>
+
+</div>
+
+
+<div class="products">
+
+
+<div class="product">
+
+<div class="product-image">
+❄️
+</div>
+
+<div class="product-info">
+
+<h3>AC</h3>
+
+<div class="price">
+Contact for Price
+</div>
+
+<p>
+Window AC and Split AC products.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+🧊
+</div>
+
+<div class="product-info">
+
+<h3>Fridge</h3>
+
+<div class="price">
+Contact for Price
+</div>
+
+<p>
+Inverter, non-inverter and double-door options.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+💨
+</div>
+
+<div class="product-info">
+
+<h3>Cooler</h3>
+
+<div class="price">
+Contact for Price
+</div>
+
+<p>
+Different types of air coolers.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-image">
+🧺
+</div>
+
+<div class="product-info">
+
+<h3>Washing Machine</h3>
+
+<div class="price">
+Contact for Price
+</div>
+
+<p>
+Automatic and semi-automatic options.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WHY US
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Why Technician Brother?</h2>
+
+<p>
+Home appliance information in one place
+</p>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🔧
+</div>
+
+<h3>Multiple Services</h3>
+
+<p>
+AC, fridge, cooler, washing machine and more.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📍
+</div>
+
+<h3>Jammu Focus</h3>
+
+<p>
+Service information focused on Jammu.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📚
+</div>
+
+<h3>Useful Guides</h3>
+
+<p>
+Simple appliance information and service details.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🏠
+</div>
+
+<h3>Home Appliances</h3>
+
+<p>
+Many appliance categories under one website.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GUIDES
+========================= -->
+
+<section id="guides">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Technician Guides</h2>
+
+<p>
+Helpful home appliance information
+</p>
+
+</div>
+
+
+<div class="guides">
+
+
+<div class="guide">
+
+<h3>❄️ AC Service Guide</h3>
+
+<p>
+Information about AC service, installation,
+deep service, gas refilling and professional repair.
+</p>
+
+</div>
+
+
+<div class="guide">
+
+<h3>🧊 Fridge Guide</h3>
+
+<p>
+Information about inverter, non-inverter,
+single-door and double-door refrigerators.
+</p>
+
+</div>
+
+
+<div class="guide">
+
+<h3>🧺 Washing Machine Guide</h3>
+
+<p>
+Information about automatic, semi-automatic,
+fully automatic and inverter washing machines.
+</p>
+
+</div>
+
+
+<div class="guide">
+
+<h3>💧 RO Guide</h3>
+
+<p>
+Information about RO servicing, installation
+and filter changing.
+</p>
+
+</div>
+
+
+<div class="guide">
+
+<h3>📹 CCTV Guide</h3>
+
+<p>
+Information about wireless, IP, PTZ, dome,
+bullet and night-vision CCTV cameras.
+</p>
+
+</div>
+
+
+<div class="guide">
+
+<h3>🔥 Geyser Guide</h3>
+
+<p>
+General information about geyser servicing,
+installation and repairing.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2>Contact Technician Brother</h2>
+
+<p>
+For AC, Fridge, Cooler, Washing Machine, RO,
+CCTV, Geyser and other services.
+</p>
+
+<p>
+📍 Jammu
+</p>
+
+
+<div class="contact-numbers">
+
+<a
+href="tel:9149975153"
+class="phone-btn">
+
+📞 9149975153
+
+</a>
+
+
+<a
+href="tel:7006850660"
+class="phone-btn">
+
+📞 7006850660
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+
+<div>
+
+<h3>Technician Brother</h3>
+
+<p>
+Home appliance service and technician information
+for Jammu.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Services</h3>
+
+<a href="#services">AC Repair</a>
+<a href="#services">Fridge Repair</a>
+<a href="#services">Cooler Repair</a>
+<a href="#services">Washing Machine</a>
+
+</div>
+
+
+<div>
+
+<h3>More</h3>
+
+<a href="#buy-sell">Buy & Sell</a>
+<a href="#products">Products</a>
+<a href="#guides">Guides</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Technician Brother. All rights reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* =========================
+   SERVICE DETAILS
+========================= */
+
+function openService(service){
+
+    const box =
+    document.getElementById("serviceDetails");
+
+    const title =
+    document.getElementById("detailTitle");
+
+    const content =
+    document.getElementById("detailContent");
+
+
+    let html = "";
+
+
+    /* AC */
+
+    if(service === "ac"){
+
+        title.innerText =
+        "AC Services in Jammu";
+
+        html = `
+
+        <div class="visit-charge">
+        Visiting Charge: ₹300
+        </div>
+
+        <div class="detail-grid">
+
+        <div class="detail-box">
+
+        <h3>❄️ Window AC</h3>
+
+        <p>✓ AC Service</p>
+        <p>✓ AC Installation</p>
+        <p>✓ Repairing</p>
+        <p>✓ Gas Refilling</p>
+
+        </div>
+
+
+        <div class="detail-box">
+
+        <h3>❄️ Split AC</h3>
+
+        <p>✓ Installation</p>
+        <p>✓ Service</p>
+        <p>✓ Deep Service</p>
+        <p>✓ Gas Refilling</p>
+        <p>✓ PCB Repairing</p>
+
+        </div>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* FRIDGE */
+
+    else if(service === "fridge"){
+
+        title.innerText =
+        "Fridge Repair in Jammu";
+
+        html = `
+
+        <div class="detail-box">
+
+        <h3>🧊 All Type Fridge Repairing</h3>
+
+        <p>✓ Non-Inverter Fridge</p>
+        <p>✓ Inverter Fridge</p>
+        <p>✓ Single Door Fridge</p>
+        <p>✓ Double Door Fridge</p>
+        <p>✓ All Type Repairing</p>
+        <p>✓ Major Fridge Problems</p>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* COOLER */
+
+    else if(service === "cooler"){
+
+        title.innerText =
+        "Cooler Service in Jammu";
+
+        html = `
+
+        <div class="detail-box">
+
+        <h3>💨 All Type of Cooler</h3>
+
+        <p>✓ All Type of Cooler</p>
+        <p>✓ Cooler Repairing</p>
+        <p>✓ Cooler Service</p>
+        <p>✓ Cooler Maintenance</p>
+        <p>✓ All Type Repairing</p>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* WASHING MACHINE */
+
+    else if(service === "washing"){
+
+        title.innerText =
+        "Washing Machine Repair in Jammu";
+
+        html = `
+
+        <div class="detail-box">
+
+        <h3>🧺 All Type Washing Machine Repairing</h3>
+
+        <p>✓ Automatic</p>
+        <p>✓ Semi Automatic</p>
+        <p>✓ Fully Automatic</p>
+        <p>✓ Inverter Type</p>
+        <p>✓ Non-Inverter Type</p>
+        <p>✓ All Type Repairing</p>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* RO */
+
+    else if(service === "ro"){
+
+        title.innerText =
+        "RO Services in Jammu";
+
+        html = `
+
+        <div class="detail-box">
+
+        <h3>💧 RO Services</h3>
+
+        <p>✓ Servicing</p>
+        <p>✓ Installation</p>
+        <p>✓ Filter Changing</p>
+        <p>✓ All Type of Repairing</p>
+        <p>✓ All Brands</p>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* CCTV */
+
+    else if(service === "cctv"){
+
+        title.innerText =
+        "CCTV Camera Services in Jammu";
+
+        html = `
+
+        <div class="detail-box">
+
+        <h3>📹 CCTV Cameras</h3>
+
+        <p>✓ Wireless CCTV Camera</p>
+        <p>✓ PTZ CCTV Camera</p>
+        <p>✓ IP CCTV Camera</p>
+        <p>✓ Night Vision Camera</p>
+        <p>✓ HD Surveillance Camera</p>
+        <p>✓ Dome CCTV Camera</p>
+        <p>✓ Bullet CCTV Camera</p>
+        <p>✓ All Type Repairing</p>
+        <p>✓ Installation</p>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* HOUSE WIRING */
+
+    else if(service === "wiring"){
+
+        title.innerText =
+        "House Wiring Services in Jammu";
+
+        html = `
+
+        <div class="detail-box">
+
+        <h3>⚡ Electrical Services</h3>
+
+        <p>✓ Inverter Installation</p>
+        <p>✓ Solar Installation</p>
+        <p>✓ All Type of House Wiring</p>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* GEYSER */
+
+    else if(service === "geyser"){
+
+        title.innerText =
+        "Geyser Services in Jammu";
+
+        html = `
+
+        <div class="detail-box">
+
+        <h3>🔥 Geyser Services</h3>
+
+        <p>✓ Repairing</p>
+        <p>✓ Installation</p>
+        <p>✓ Servicing</p>
+
+        </div>
+
+        `;
+
+    }
+
+
+    content.innerHTML = html;
+
+    box.classList.add("show");
+
+    box.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+    });
+
+}
+
+
+/* CLOSE SERVICE */
+
+function closeService(){
+
+    document
+    .getElementById("serviceDetails")
+    .classList.remove("show");
+
+}
+
+
+/* =========================
+   PHOTO PREVIEW
+========================= */
+
+function previewImage(event, previewId){
+
+    const file =
+    event.target.files[0];
+
+    if(!file){
+        return;
+    }
+
+    const preview =
+    document.getElementById(previewId);
+
+    const reader =
+    new FileReader();
+
+    reader.onload = function(e){
+
+        preview.src =
+        e.target.result;
+
+        preview.style.display =
+        "block";
+
+    };
+
+    reader.readAsDataURL(file);
+
+}
+
+
+/* =========================
+   BUY BUTTON
+========================= */
+
+function buyProduct(){
+
+    alert(
+        "Product photo selected. " +
+        "For purchase enquiry, please contact Technician Brother."
+    );
+
+}
+
+
+/* =========================
+   SELL BUTTON
+========================= */
+
+function sellProduct(){
+
+    alert(
+        "Product photo selected. " +
+        "The online selling/listing system will be connected here."
+    );
+
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+function searchSite(){
+
+    const input =
+    document
+    .getElementById("searchBox")
+    .value
+    .toLowerCase()
+    .trim();
+
+
+    if(input === ""){
+        return;
+    }
+
+
+    if(
+        input.includes("ac") ||
+        input.includes("air conditioner") ||
+        input.includes("split") ||
+        input.includes("window")
+    ){
+
+        openService("ac");
+
+    }
+
+
+    else if(
+        input.includes("fridge") ||
+        input.includes("refrigerator")
+    ){
+
+        openService("fridge");
+
+    }
+
+
+    else if(
+        input.includes("cooler")
+    ){
+
+        openService("cooler");
+
+    }
+
+
+    else if(
+        input.includes("washing") ||
+        input.includes("machine")
+    ){
+
+        openService("washing");
+
+    }
+
+
+    else if(
+        input.includes("ro") ||
+        input.includes("water purifier")
+    ){
+
+        openService("ro");
+
+    }
+
+
+    else if(
+        input.includes("cctv") ||
+        input.includes("camera")
+    ){
+
+        openService("cctv");
+
+    }
+
+
+    else if(
+        input.includes("wiring") ||
+        input.includes("solar") ||
+        input.includes("inverter")
+    ){
+
+        openService("wiring");
+
+    }
+
+
+    else if(
+        input.includes("geyser")
+    ){
+
+        openService("geyser");
+
+    }
+
+}
+
+</script>
+
+
+</body>
+</html>
