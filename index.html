@@ -1,1 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="sWTvQiQaJcIUJZ6LOz5LONxHfPGgtCcjFRKgHVPOZ9Y" />
 
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Technician Brother Jammu | AC Repair, Fridge Repair & Home Appliance Services</title>
+
+<meta name="description" content="Technician Brother Jammu provides information about AC repair, AC service, installation, fridge repair, cooler repair, washing machine repair, RO, CCTV, house wiring and geyser services.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://technicianbrother9149.github.io/TechnicianBrother-Official/">
+
+<meta name="theme-color" content="#050505">
+
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:#f5f5f5;
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input{
+    font-family:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#080808;
+    border-bottom:1px solid #252525;
+}
+
+.header{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+    white-space:nowrap;
+}
+
+.logo span{
+    color:#00aaff;
+}
+
+.search{
+    width:220px;
+    background:#111;
+    color:#fff;
+    border:1px solid #333;
+    border-radius:10px;
+    padding:11px 14px;
+    outline:none;
+}
+
+.search:focus{
+    border-color:#00aaff;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.nav a{
+    color:#ccc;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+.nav a:hover{
+    color:#00aaff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    padding:85px 0;
+    background:
+    radial-gradient(circle at 85% 20%,#063a5e,transparent 35%),
+    linear-gradient(135deg,#050505,#101010);
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.badge{
+    display:inline-block;
+    color:#5ed1ff;
+    background:#071a25;
+    border:1px solid #14506e;
+    border-radius:30px;
+    padding:7px 14px;
+    margin-bottom:20px;
+    font-size:13px;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#00aaff;
+}
+
+.hero p{
+    color:#aaa;
+    font-size:18px;
+    max-width:780px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:28px;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 20px;
+    border-radius:9px;
+    border:1px solid #333;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:#008dcc;
+    color:#fff;
+    border-color:#008dcc;
+}
+
+.btn-primary:hover{
+    background:#00aaff;
+}
+
+.btn-dark{
+    background:#151515;
+    color:#fff;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section{
+    padding:65px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title h2{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#888;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.service-card{
+    background:#0d0d0d;
+    border:1px solid #292929;
+    border-radius:15px;
+    padding:25px 15px;
+    text-align:center;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.service-card:hover{
+    transform:translateY(-4px);
+    border-color:#00aaff;
+}
+
+.service-icon{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.service-card h3{
+    font-size:19px;
+    margin-bottom:5px;
+}
+
+.service-card p{
+    color:#888;
+    font-size:13px;
+}
+
+
+/* =========================
+   SERVICE DETAILS
+========================= */
+
+.service-details{
+    display:none;
+    margin-top:30px;
+    padding:28px;
+    background:#0b0b0b;
+    border:1px solid #303030;
+    border-radius:16px;
+}
+
+.service-details.show{
+    display:block;
+}
+
+.service-details h2{
+    color:#00aaff;
+    margin-bottom:20px;
+}
+
+.detail-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.detail-box{
+    background:#151515;
+    border:1px solid #292929;
+    border-radius:12px;
+    padding:20px;
+}
+
+.detail-box h3{
+    margin-bottom:12px;
+    color:#fff;
+}
+
+.detail-box p{
+    color:#aaa;
+    margin:5px 0;
+}
+
+.visit-charge{
+    display:inline-block;
+    background:#102717;
+    border:1px solid #286c3b;
+    color:#6ee68d;
+    padding:9px 14px;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.close-btn{
+    margin-top:20px;
+    background:#222;
+    color:#fff;
+    border:1px solid #444;
+    padding:11px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+/* =========================
+   LOCAL SEO CONTENT
+========================= */
+
+.local-section{
+    background:#090909;
+    border-top:1px solid #181818;
+    border-bottom:1px solid #181818;
+}
+
+.local-content{
+    max-width:950px;
+    margin:auto;
+}
+
+.local-content h2{
+    margin-bottom:18px;
+}
+
+.local-content h3{
+    color:#51cfff;
+    margin-top:25px;
+    margin-bottom:7px;
+}
+
+.local-content p{
+    color:#aaa;
+    margin-bottom:12px;
+}
+
+
+/* =========================
+   BUY SELL
+========================= */
+
+.buy-sell{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.buy-box,
+.sell-box{
+    padding:32px;
+    border-radius:16px;
+    border:1px solid #292929;
+}
+
+.buy-box{
+    background:linear-gradient(135deg,#071c2b,#0b0b0b);
+}
+
+.sell-box{
+    background:linear-gradient(135deg,#092216,#0b0b0b);
+}
+
+.buy-box h3,
+.sell-box h3{
+    font-size:27px;
+    margin-bottom:10px;
+}
+
+.buy-box p,
+.sell-box p{
+    color:#aaa;
+    margin-bottom:18px;
+}
+
+
+/* =========================
+   PHOTO UPLOAD
+========================= */
+
+.upload-label{
+    display:block;
+    background:#151515;
+    border:1px dashed #555;
+    border-radius:10px;
+    padding:15px;
+    color:#ccc;
+    margin:18px 0;
+    cursor:pointer;
+}
+
+.upload-label input{
+    display:block;
+    width:100%;
+    margin-top:10px;
+    color:#aaa;
+}
+
+.upload-preview{
+    display:none;
+    width:100%;
+    max-height:250px;
+    object-fit:contain;
+    background:#111;
+    border:1px solid #333;
+    border-radius:10px;
+    margin:15px 0;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.product{
+    background:#0e0e0e;
+    border:1px solid #292929;
+    border-radius:14px;
+    overflow:hidden;
+}
+
+.product-image{
+    height:170px;
+    background:#161616;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h3{
+    margin-bottom:7px;
+}
+
+.product-info p{
+    color:#888;
+    font-size:14px;
+}
+
+.price{
+    color:#00b7ff;
+    font-size:20px;
+    font-weight:bold;
+    margin:7px 0 15px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.feature{
+    text-align:center;
+    padding:25px;
+    background:#0d0d0d;
+    border:1px solid #292929;
+    border-radius:14px;
+}
+
+.feature-icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:#888;
+    font-size:14px;
+}
+
+
+/* =========================
+   GUIDES
+========================= */
+
+.guides{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.guide{
+    background:#0d0d0d;
+    border:1px solid #292929;
+    border-radius:14px;
+    padding:22px;
+}
+
+.guide h3{
+    color:#fff;
+    margin-bottom:9px;
+}
+
+.guide p{
+    color:#888;
+    font-size:14px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#080808;
+    text-align:center;
+}
+
+.contact-box{
+    max-width:750px;
+    margin:auto;
+}
+
+.contact-box p{
+    color:#999;
+    margin:8px 0;
+}
+
+.contact-numbers{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:22px;
+}
+
+.phone-btn{
+    display:inline-block;
+    background:#008dcc;
+    color:#fff;
+    padding:14px 22px;
+    border-radius:9px;
+    font-weight:bold;
+}
+
+.phone-btn:hover{
+    background:#00aaff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#030303;
+    border-top:1px solid #222;
+    padding:40px 0;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p,
+footer a{
+    color:#777;
+    font-size:14px;
+}
+
+footer a{
+    display:block;
+    margin:5px 0;
+}
+
+.copyright{
+    text-align:center;
+    color:#555;
+    border-top:1px solid #1b1b1b;
+    margin-top:30px;
+    padding-top:20px;
+    font-size:13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:950px){
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .guides{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:650px){
+
+    .header{
+        padding:12px 0;
+        flex-wrap:wrap;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .search{
+        width:145px;
+    }
+
+    .nav{
+        order:3;
+        width:100%;
+        overflow-x:auto;
+        justify-content:flex-start;
+        padding-bottom:5px;
+    }
+
+    .nav a{
+        font-size:13px;
+    }
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .service-card{
+        padding:20px 8px;
+    }
+
+    .service-icon{
+        font-size:34px;
+    }
+
+    .service-card h3{
+        font-size:17px;
+    }
+
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
+
+    .buy-sell{
+        grid-template-columns:1fr;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .features{
+        grid-template-columns:
