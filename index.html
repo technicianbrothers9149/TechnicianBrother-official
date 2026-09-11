@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="sWTvQiQaJcIUJZ6LOz5LONxHfPGgtCcjFRKgHVPOZ9Y" />
-
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Technician Brother Jammu | AC Repair, Fridge Repair & Home Appliance Services</title>
 
-<meta name="description" content="Technician Brother Jammu provides information about AC repair, AC service, installation, fridge repair, cooler repair, washing machine repair, RO, CCTV, house wiring and geyser services.">
+<meta name="description" content="Technician Brother Jammu provides AC, fridge, cooler, washing machine, RO, CCTV, house wiring, geyser and home appliance repair and service information.">
 
 <meta name="robots" content="index, follow">
 
-<link rel="canonical" href="https://technicianbrother9149.github.io/TechnicianBrother-Official/">
+<link rel="canonical" href="https://gamingsahil4115-prog.github.io/TechnicianBrother-Official/">
 
 <meta name="theme-color" content="#050505">
 
-
 <style>
-
-/* =========================
-   BASIC
-========================= */
-
 *{
     margin:0;
     padding:0;
@@ -35,9 +27,9 @@ html{
 }
 
 body{
-    background:#050505;
-    color:#f5f5f5;
     font-family:Arial,Helvetica,sans-serif;
+    background:#050505;
+    color:#fff;
     line-height:1.6;
 }
 
@@ -46,8 +38,7 @@ a{
     color:inherit;
 }
 
-button,
-input{
+button{
     font-family:inherit;
 }
 
@@ -57,20 +48,17 @@ input{
     margin:auto;
 }
 
-
-/* =========================
-   HEADER
-========================= */
-
+/* HEADER */
 header{
     position:sticky;
     top:0;
-    z-index:999;
-    background:#080808;
-    border-bottom:1px solid #252525;
+    z-index:1000;
+    background:#050505;
+    border-bottom:1px solid #222;
+    box-shadow:0 4px 20px rgba(0,0,0,.4);
 }
 
-.header{
+.header-inner{
     min-height:70px;
     display:flex;
     align-items:center;
@@ -79,55 +67,101 @@ header{
 }
 
 .logo{
-    font-size:24px;
-    font-weight:800;
-    white-space:nowrap;
+    font-size:23px;
+    font-weight:900;
+    letter-spacing:.3px;
 }
 
 .logo span{
-    color:#00aaff;
+    color:#00bfff;
 }
 
-.search{
-    width:220px;
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.header-btn{
+    border:1px solid #333;
+    background:#111;
+    color:#fff;
+    padding:9px 13px;
+    border-radius:9px;
+    cursor:pointer;
+}
+
+.header-btn:hover{
+    border-color:#00bfff;
+}
+
+/* SEARCH */
+.search-area{
+    padding:14px 0;
+    border-bottom:1px solid #151515;
+}
+
+.search-box{
+    display:flex;
+    gap:8px;
+}
+
+.search-box input{
+    flex:1;
     background:#111;
     color:#fff;
     border:1px solid #333;
     border-radius:10px;
-    padding:11px 14px;
+    padding:13px;
     outline:none;
 }
 
-.search:focus{
-    border-color:#00aaff;
+.search-box input:focus{
+    border-color:#00bfff;
+}
+
+.search-box button{
+    background:#00bfff;
+    color:#000;
+    border:0;
+    border-radius:10px;
+    padding:0 18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* NAV */
+.nav-wrap{
+    overflow-x:auto;
+    white-space:nowrap;
+    border-bottom:1px solid #222;
 }
 
 .nav{
     display:flex;
-    align-items:center;
-    gap:15px;
+    gap:7px;
+    padding:10px 0;
 }
 
 .nav a{
-    color:#ccc;
+    background:#101010;
+    border:1px solid #282828;
+    padding:8px 13px;
+    border-radius:20px;
     font-size:14px;
-    white-space:nowrap;
 }
 
 .nav a:hover{
-    color:#00aaff;
+    background:#00bfff;
+    color:#000;
 }
 
-
-/* =========================
-   HERO
-========================= */
-
+/* HERO */
 .hero{
-    padding:85px 0;
+    padding:55px 0;
     background:
-    radial-gradient(circle at 85% 20%,#063a5e,transparent 35%),
-    linear-gradient(135deg,#050505,#101010);
+    radial-gradient(circle at top right,#07364a 0,transparent 38%),
+    linear-gradient(180deg,#080808,#050505);
 }
 
 .hero-content{
@@ -136,450 +170,432 @@ header{
 
 .badge{
     display:inline-block;
-    color:#5ed1ff;
-    background:#071a25;
-    border:1px solid #14506e;
-    border-radius:30px;
-    padding:7px 14px;
-    margin-bottom:20px;
+    background:#102630;
+    color:#00bfff;
+    border:1px solid #14526b;
+    padding:7px 12px;
+    border-radius:20px;
+    margin-bottom:15px;
     font-size:13px;
 }
 
 .hero h1{
-    font-size:48px;
-    line-height:1.1;
-    margin-bottom:20px;
+    font-size:clamp(32px,7vw,62px);
+    line-height:1.05;
+    margin-bottom:18px;
 }
 
 .hero h1 span{
-    color:#00aaff;
+    color:#00bfff;
 }
 
 .hero p{
-    color:#aaa;
-    font-size:18px;
-    max-width:780px;
+    color:#bbb;
+    font-size:17px;
+    max-width:750px;
 }
 
-.buttons{
+.hero-buttons{
     display:flex;
-    gap:12px;
     flex-wrap:wrap;
-    margin-top:28px;
+    gap:10px;
+    margin-top:25px;
 }
 
-.btn{
+.primary-btn,
+.secondary-btn{
     display:inline-block;
-    padding:13px 20px;
-    border-radius:9px;
-    border:1px solid #333;
+    padding:13px 18px;
+    border-radius:10px;
     font-weight:bold;
-    cursor:pointer;
 }
 
-.btn-primary{
-    background:#008dcc;
-    color:#fff;
-    border-color:#008dcc;
+.primary-btn{
+    background:#00bfff;
+    color:#000;
 }
 
-.btn-primary:hover{
-    background:#00aaff;
+.secondary-btn{
+    border:1px solid #444;
+    background:#111;
 }
 
-.btn-dark{
-    background:#151515;
-    color:#fff;
+/* DOWNLOAD APP */
+.app-download{
+    margin-top:20px;
+    padding:16px;
+    background:#0b1114;
+    border:1px solid #12495d;
+    border-radius:13px;
 }
 
+.app-download p{
+    margin-bottom:10px;
+    color:#bbb;
+}
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+.download-app-btn{
+    display:inline-block;
+    background:#00bfff;
+    color:#000;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+}
 
+/* SECTIONS */
 section{
-    padding:65px 0;
+    padding:48px 0;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:35px;
+    margin-bottom:25px;
 }
 
 .section-title h2{
-    font-size:32px;
-    margin-bottom:8px;
-}
-
-.section-title p{
-    color:#888;
-}
-
-
-/* =========================
-   SERVICES
-========================= */
-
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.service-card{
-    background:#0d0d0d;
-    border:1px solid #292929;
-    border-radius:15px;
-    padding:25px 15px;
-    text-align:center;
-    cursor:pointer;
-    transition:.2s;
-}
-
-.service-card:hover{
-    transform:translateY(-4px);
-    border-color:#00aaff;
-}
-
-.service-icon{
-    font-size:42px;
-    margin-bottom:10px;
-}
-
-.service-card h3{
-    font-size:19px;
+    font-size:30px;
     margin-bottom:5px;
 }
 
-.service-card p{
-    color:#888;
-    font-size:13px;
+.section-title p{
+    color:#999;
 }
 
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
 
-/* =========================
-   SERVICE DETAILS
-========================= */
+.card{
+    background:#101010;
+    border:1px solid #262626;
+    border-radius:14px;
+    padding:20px;
+    transition:.2s;
+}
 
-.service-details{
+.card:hover{
+    transform:translateY(-3px);
+    border-color:#00bfff;
+}
+
+.service-card{
+    cursor:pointer;
+}
+
+.icon{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    margin-bottom:6px;
+}
+
+.card p{
+    color:#999;
+    font-size:14px;
+}
+
+/* SERVICE DETAILS */
+.service-detail{
     display:none;
-    margin-top:30px;
-    padding:28px;
-    background:#0b0b0b;
-    border:1px solid #303030;
+    background:#0c0c0c;
+    border:1px solid #292929;
     border-radius:16px;
+    padding:25px;
+    margin-top:25px;
 }
 
-.service-details.show{
+.service-detail.active{
     display:block;
 }
 
-.service-details h2{
-    color:#00aaff;
-    margin-bottom:20px;
+.service-detail h2{
+    color:#00bfff;
+    margin-bottom:8px;
 }
 
-.detail-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
+.service-detail h3{
+    margin-top:20px;
+    margin-bottom:8px;
 }
 
-.detail-box{
-    background:#151515;
-    border:1px solid #292929;
-    border-radius:12px;
-    padding:20px;
+.service-detail ul{
+    padding-left:20px;
+    color:#ccc;
 }
 
-.detail-box h3{
-    margin-bottom:12px;
-    color:#fff;
-}
-
-.detail-box p{
-    color:#aaa;
+.service-detail li{
     margin:5px 0;
 }
 
 .visit-charge{
     display:inline-block;
-    background:#102717;
-    border:1px solid #286c3b;
-    color:#6ee68d;
-    padding:9px 14px;
-    border-radius:8px;
-    margin-bottom:20px;
+    margin:10px 0;
+    background:#17250c;
+    color:#9cff45;
+    border:1px solid #426f25;
+    border-radius:9px;
+    padding:9px 13px;
     font-weight:bold;
 }
 
-.close-btn{
-    margin-top:20px;
+.close-detail{
+    float:right;
     background:#222;
     color:#fff;
     border:1px solid #444;
-    padding:11px 18px;
     border-radius:8px;
+    padding:7px 12px;
     cursor:pointer;
 }
 
-
-/* =========================
-   LOCAL SEO CONTENT
-========================= */
-
-.local-section{
-    background:#090909;
-    border-top:1px solid #181818;
-    border-bottom:1px solid #181818;
-}
-
-.local-content{
-    max-width:950px;
-    margin:auto;
-}
-
-.local-content h2{
-    margin-bottom:18px;
-}
-
-.local-content h3{
-    color:#51cfff;
-    margin-top:25px;
-    margin-bottom:7px;
-}
-
-.local-content p{
-    color:#aaa;
-    margin-bottom:12px;
-}
-
-
-/* =========================
-   BUY SELL
-========================= */
-
+/* BUY SELL */
 .buy-sell{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:20px;
+    gap:18px;
 }
 
 .buy-box,
 .sell-box{
-    padding:32px;
     border-radius:16px;
+    padding:28px;
     border:1px solid #292929;
 }
 
 .buy-box{
-    background:linear-gradient(135deg,#071c2b,#0b0b0b);
+    background:linear-gradient(135deg,#07141b,#0b0b0b);
 }
 
 .sell-box{
-    background:linear-gradient(135deg,#092216,#0b0b0b);
+    background:linear-gradient(135deg,#0c1709,#0b0b0b);
 }
 
 .buy-box h3,
 .sell-box h3{
-    font-size:27px;
+    font-size:26px;
+    margin-bottom:8px;
+}
+
+.buy-box h3{
+    color:#00bfff;
+}
+
+.sell-box h3{
+    color:#8cff3f;
+}
+
+/* SELL FORM */
+.sell-form{
+    margin-top:18px;
+}
+
+.sell-form input,
+.sell-form textarea,
+.sell-form select{
+    width:100%;
     margin-bottom:10px;
+    background:#111;
+    color:#fff;
+    border:1px solid #333;
+    border-radius:9px;
+    padding:12px;
+    outline:none;
 }
 
-.buy-box p,
-.sell-box p{
-    color:#aaa;
-    margin-bottom:18px;
+.sell-form textarea{
+    min-height:100px;
+    resize:vertical;
 }
 
+.sell-form input:focus,
+.sell-form textarea:focus,
+.sell-form select:focus{
+    border-color:#00bfff;
+}
 
-/* =========================
-   PHOTO UPLOAD
-========================= */
+.photo-input{
+    border:1px dashed #555 !important;
+    padding:15px !important;
+}
 
-.upload-label{
-    display:block;
-    background:#151515;
-    border:1px dashed #555;
+.photo-preview{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:10px 0;
+}
+
+.preview-item{
+    position:relative;
+    width:110px;
+    height:110px;
+}
+
+.preview-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
     border-radius:10px;
-    padding:15px;
-    color:#ccc;
-    margin:18px 0;
+    border:1px solid #333;
+}
+
+.remove-photo{
+    position:absolute;
+    right:4px;
+    top:4px;
+    width:25px;
+    height:25px;
+    border:0;
+    border-radius:50%;
+    background:#ff3333;
+    color:#fff;
     cursor:pointer;
 }
 
-.upload-label input{
-    display:block;
-    width:100%;
-    margin-top:10px;
-    color:#aaa;
-}
-
-.upload-preview{
-    display:none;
-    width:100%;
-    max-height:250px;
-    object-fit:contain;
-    background:#111;
-    border:1px solid #333;
-    border-radius:10px;
-    margin:15px 0;
-}
-
-
-/* =========================
-   PRODUCTS
-========================= */
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.product{
-    background:#0e0e0e;
-    border:1px solid #292929;
-    border-radius:14px;
+/* PRODUCTS */
+.product-card{
     overflow:hidden;
+    padding:0;
 }
 
 .product-image{
     height:170px;
-    background:#161616;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:60px;
+    background:#151515;
+    font-size:55px;
 }
 
 .product-info{
-    padding:20px;
-}
-
-.product-info h3{
-    margin-bottom:7px;
-}
-
-.product-info p{
-    color:#888;
-    font-size:14px;
+    padding:18px;
 }
 
 .price{
-    color:#00b7ff;
+    color:#00bfff;
     font-size:20px;
     font-weight:bold;
-    margin:7px 0 15px;
+    margin:7px 0;
 }
 
-
-/* =========================
-   FEATURES
-========================= */
-
-.features{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
+.cart-btn{
+    width:100%;
+    background:#00bfff;
+    color:#000;
+    border:0;
+    border-radius:8px;
+    padding:11px;
+    cursor:pointer;
+    font-weight:bold;
 }
 
-.feature{
-    text-align:center;
-    padding:25px;
-    background:#0d0d0d;
-    border:1px solid #292929;
-    border-radius:14px;
-}
-
-.feature-icon{
-    font-size:35px;
-    margin-bottom:10px;
-}
-
-.feature p{
-    color:#888;
-    font-size:14px;
-}
-
-
-/* =========================
-   GUIDES
-========================= */
-
-.guides{
+/* GUIDES */
+.guide-list{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:18px;
+    gap:15px;
 }
 
 .guide{
-    background:#0d0d0d;
-    border:1px solid #292929;
-    border-radius:14px;
-    padding:22px;
+    background:#101010;
+    border:1px solid #262626;
+    border-radius:13px;
+    padding:20px;
 }
 
-.guide h3{
-    color:#fff;
-    margin-bottom:9px;
-}
-
-.guide p{
-    color:#888;
-    font-size:14px;
-}
-
-
-/* =========================
-   CONTACT
-========================= */
-
-.contact{
-    background:#080808;
-    text-align:center;
-}
-
-.contact-box{
-    max-width:750px;
-    margin:auto;
-}
-
-.contact-box p{
-    color:#999;
-    margin:8px 0;
-}
-
-.contact-numbers{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
-    margin-top:22px;
-}
-
-.phone-btn{
+.guide a{
+    color:#00bfff;
     display:inline-block;
-    background:#008dcc;
+    margin-top:10px;
+}
+
+/* WHY US */
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.feature{
+    background:#101010;
+    border:1px solid #242424;
+    border-radius:13px;
+    padding:20px;
+}
+
+.feature strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+/* SEO CONTENT */
+.seo-content{
+    color:#aaa;
+}
+
+.seo-content h2,
+.seo-content h3{
     color:#fff;
-    padding:14px 22px;
+    margin:18px 0 8px;
+}
+
+.seo-content p{
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+.contact-box{
+    background:#0e0e0e;
+    border:1px solid #292929;
+    border-radius:16px;
+    padding:28px;
+}
+
+.phone-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:15px;
+}
+
+.phone{
+    background:#00bfff;
+    color:#000;
+    padding:12px 17px;
     border-radius:9px;
     font-weight:bold;
 }
 
-.phone-btn:hover{
-    background:#00aaff;
+/* TOAST */
+#toast{
+    position:fixed;
+    left:50%;
+    bottom:25px;
+    transform:translateX(-50%) translateY(100px);
+    background:#00bfff;
+    color:#000;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:bold;
+    z-index:5000;
+    transition:.3s;
 }
 
+#toast.show{
+    transform:translateX(-50%) translateY(0);
+}
 
-/* =========================
-   FOOTER
-========================= */
-
+/* FOOTER */
 footer{
-    background:#030303;
+    margin-top:30px;
+    padding:35px 0;
     border-top:1px solid #222;
-    padding:40px 0;
+    background:#030303;
 }
 
 .footer-grid{
@@ -593,37 +609,30 @@ footer h3{
 }
 
 footer p,
-footer a{
-    color:#777;
+footer li{
+    color:#888;
     font-size:14px;
 }
 
-footer a{
-    display:block;
+footer ul{
+    list-style:none;
+}
+
+footer li{
     margin:5px 0;
 }
 
 .copyright{
     text-align:center;
-    color:#555;
-    border-top:1px solid #1b1b1b;
-    margin-top:30px;
+    border-top:1px solid #1d1d1d;
+    margin-top:25px;
     padding-top:20px;
-    font-size:13px;
+    color:#666;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:950px){
-
-    .service-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .products{
+/* RESPONSIVE */
+@media(max-width:900px){
+    .grid{
         grid-template-columns:repeat(2,1fr);
     }
 
@@ -631,1432 +640,1246 @@ footer a{
         grid-template-columns:repeat(2,1fr);
     }
 
-    .guides{
-        grid-template-columns:repeat(2,1fr);
+    .guide-list{
+        grid-template-columns:1fr 1fr;
     }
-
 }
 
 @media(max-width:650px){
-
-    .header{
-        padding:12px 0;
-        flex-wrap:wrap;
+    .header-inner{
+        min-height:60px;
     }
 
     .logo{
-        font-size:20px;
+        font-size:18px;
     }
 
-    .search{
-        width:145px;
+    .header-btn{
+        padding:7px 9px;
+        font-size:12px;
     }
 
-    .nav{
-        order:3;
-        width:100%;
-        overflow-x:auto;
-        justify-content:flex-start;
-        padding-bottom:5px;
-    }
-
-    .nav a{
-        font-size:13px;
-    }
-
-    .hero{
-        padding:60px 0;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .service-grid{
-        grid-template-columns:1fr 1fr;
-        gap:12px;
-    }
-
-    .service-card{
-        padding:20px 8px;
-    }
-
-    .service-icon{
-        font-size:34px;
-    }
-
-    .service-card h3{
-        font-size:17px;
-    }
-
-    .detail-grid{
-        grid-template-columns:1fr;
-    }
-
-    .buy-sell{
-        grid-template-columns:1fr;
-    }
-
-    .products{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .features{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .guides{
-        grid-template-columns:1fr;
-    }
-
+    .grid,
+    .buy-sell,
+    .guide-list,
+    .features,
     .footer-grid{
         grid-template-columns:1fr;
     }
 
+    .hero{
+        padding:38px 0;
+    }
+
     section{
-        padding:50px 0;
+        padding:35px 0;
     }
 
+    .hero h1{
+        font-size:37px;
+    }
+
+    .search-box button{
+        padding:0 12px;
+    }
 }
-
-
-/* VERY SMALL PHONES */
-
-@media(max-width:380px){
-
-    .products{
-        grid-template-columns:1fr;
-    }
-
-    .features{
-        grid-template-columns:1fr;
-    }
-
-}
-
 </style>
-
-
-<!-- =========================
-     STRUCTURED DATA
-========================= -->
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"HomeAndConstructionBusiness",
-  "name":"Technician Brother",
-  "url":"https://technicianbrother9149.github.io/TechnicianBrother-Official/",
-  "description":"Home appliance service information for Jammu.",
-  "areaServed":{
-    "@type":"City",
-    "name":"Jammu"
-  },
-  "serviceType":[
-    "AC Repair",
-    "AC Service",
-    "AC Installation",
-    "Fridge Repair",
-    "Cooler Repair",
-    "Washing Machine Repair",
-    "RO Service",
-    "CCTV Installation",
-    "House Wiring",
-    "Geyser Service"
-  ]
-}
-</script>
-
 </head>
 
-
 <body>
-<a href="https://github.com/technicianbrother9149/TechnicianBrother-Official/raw/refs/heads/main/TechnicianBrotherJammu-v2.apk">
-  📱 Download Technician Brother App
-</a>
-
-<!-- =========================
-     HEADER
-========================= -->
 
 <header>
+    <div class="container header-inner">
 
-<div class="container header">
+        <a href="#" class="logo">
+            Technician <span>Brother</span>
+        </a>
 
-<a href="#home" class="logo">
-Technician <span>Brother</span>
-</a>
+        <div class="header-actions">
+            <button class="header-btn" onclick="showToast('Welcome to Technician Brother')">
+                Home
+            </button>
 
-<input
-type="search"
-id="searchBox"
-class="search"
-placeholder="Search AC, Fridge..."
-onkeyup="searchSite()"
->
+            <a class="header-btn" href="#contact">
+                Contact
+            </a>
+        </div>
 
-<nav class="nav">
-
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#buy-sell">Buy & Sell</a>
-<a href="#products">Products</a>
-<a href="#guides">Guides</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-</div>
-
+    </div>
 </header>
 
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero" id="home">
-
-<div class="container">
-
-<div class="hero-content">
-
-<div class="badge">
-Jammu Home Appliance Services
+<div class="search-area">
+    <div class="container">
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search AC, fridge, cooler, RO, CCTV..."
+                onkeydown="if(event.key==='Enter') searchSite()"
+            >
+            <button onclick="searchSite()">Search</button>
+        </div>
+    </div>
 </div>
 
-<h1>
-AC Repair & Home Appliance
-<span>Services in Jammu</span>
-</h1>
-
-<p>
-Technician Brother provides home appliance service information
-for AC repair, AC service, AC installation, fridge repair,
-cooler repair, washing machine repair, RO service,
-CCTV, house wiring and geyser services in Jammu.
-</p>
-
-<div class="buttons">
-
-<a href="#services" class="btn btn-primary">
-View Services
-</a>
-
-<a href="#contact" class="btn btn-dark">
-Contact Us
-</a>
-
+<div class="nav-wrap">
+    <div class="container">
+        <nav class="nav">
+            <a href="#services">Services</a>
+            <a href="#buy-sell">Buy & Sell</a>
+            <a href="#products">Products</a>
+            <a href="#guides">Guides</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </div>
 
-</div>
+<main>
 
-</div>
+<section class="hero">
+    <div class="container">
 
+        <div class="hero-content">
+
+            <span class="badge">
+                Jammu Home Appliance & Technical Services
+            </span>
+
+            <h1>
+                Your Guide for
+                <span>Home & Electrical Appliances</span>
+            </h1>
+
+            <p>
+                Technician Brother helps you find information about AC,
+                fridge, cooler, washing machine, RO, CCTV, house wiring,
+                geyser and other home appliance services.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#services" class="primary-btn">
+                    Explore Services
+                </a>
+
+                <a href="#buy-sell" class="secondary-btn">
+                    Buy & Sell
+                </a>
+            </div>
+
+            <div class="app-download">
+
+                <p>
+                    📱 Get the Technician Brother Android App
+                </p>
+
+                <a
+                    class="download-app-btn"
+                    href="https://github.com/gamingsahil4115-prog/TechnicianBrother-Official/raw/refs/heads/main/TechnicianBrotherJammu-v2.apk"
+                    download
+                >
+                    📱 Download Technician Brother App
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
 </section>
 
-
-<!-- =========================
-     SERVICES
-========================= -->
 
 <section id="services">
 
 <div class="container">
 
-<div class="section-title">
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Tap any service to see available work.</p>
+    </div>
 
-<h2>Our Services in Jammu</h2>
+    <div class="grid">
 
-<p>
-Tap a service to see complete details
-</p>
+        <div class="card service-card" onclick="openService('ac')">
+            <div class="icon">❄️</div>
+            <h3>AC</h3>
+            <p>Window AC, Split AC, installation, service and repair.</p>
+        </div>
+
+        <div class="card service-card" onclick="openService('fridge')">
+            <div class="icon">🧊</div>
+            <h3>Fridge</h3>
+            <p>Inverter, non-inverter, single and double door fridge repair.</p>
+        </div>
+
+        <div class="card service-card" onclick="openService('cooler')">
+            <div class="icon">💨</div>
+            <h3>Cooler</h3>
+            <p>All types of cooler service and repairing.</p>
+        </div>
+
+        <div class="card service-card" onclick="openService('washing')">
+            <div class="icon">🫧</div>
+            <h3>Washing Machine</h3>
+            <p>Automatic, semi automatic and fully automatic repair.</p>
+        </div>
+
+        <div class="card service-card" onclick="openService('ro')">
+            <div class="icon">💧</div>
+            <h3>RO</h3>
+            <p>RO service, installation, filter replacement and repair.</p>
+        </div>
+
+        <div class="card service-card" onclick="openService('camera')">
+            <div class="icon">📹</div>
+            <h3>Cameras</h3>
+            <p>CCTV installation, repair and surveillance solutions.</p>
+        </div>
+
+        <div class="card service-card" onclick="openService('wiring')">
+            <div class="icon">⚡</div>
+            <h3>House Wiring</h3>
+            <p>House wiring, inverter and solar installation.</p>
+        </div>
+
+        <div class="card service-card" onclick="openService('geyser')">
+            <div class="icon">🚿</div>
+            <h3>Geyser</h3>
+            <p>Geyser installation, servicing and repairing.</p>
+        </div>
+
+    </div>
+
+
+    <!-- AC -->
+    <div class="service-detail" id="detail-ac">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>❄️ AC Repair & Service</h2>
+
+        <span class="visit-charge">
+            Visiting Charge: ₹300
+        </span>
+
+        <h3>Window AC</h3>
+
+        <ul>
+            <li>Window AC Service</li>
+            <li>Window AC Installation</li>
+            <li>Window AC Repairing</li>
+            <li>Gas Refilling</li>
+        </ul>
+
+        <h3>Split AC</h3>
+
+        <ul>
+            <li>Split AC Installation</li>
+            <li>Split AC Service</li>
+            <li>Deep AC Service</li>
+            <li>Gas Refilling</li>
+            <li>PCB Repairing</li>
+        </ul>
+
+    </div>
+
+
+    <!-- FRIDGE -->
+    <div class="service-detail" id="detail-fridge">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>🧊 Fridge Repair</h2>
+
+        <p>
+            Repairing and service for different types of refrigerators.
+        </p>
+
+        <h3>Available Work</h3>
+
+        <ul>
+            <li>Non-Inverter Fridge Repair</li>
+            <li>Inverter Fridge Repair</li>
+            <li>Single Door Fridge Repair</li>
+            <li>Double Door Fridge Repair</li>
+            <li>All Types of Fridge Repairing</li>
+        </ul>
+
+    </div>
+
+
+    <!-- COOLER -->
+    <div class="service-detail" id="detail-cooler">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>💨 Cooler Repair & Service</h2>
+
+        <p>
+            Service and repairing for all types of home and air coolers.
+        </p>
+
+        <ul>
+            <li>All Types of Cooler Repairing</li>
+            <li>Cooler Servicing</li>
+            <li>Cooler Installation Assistance</li>
+            <li>Cooler Maintenance</li>
+        </ul>
+
+    </div>
+
+
+    <!-- WASHING MACHINE -->
+    <div class="service-detail" id="detail-washing">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>🫧 Washing Machine Repair</h2>
+
+        <ul>
+            <li>Automatic Washing Machine</li>
+            <li>Semi Automatic Washing Machine</li>
+            <li>Fully Automatic Washing Machine</li>
+            <li>Inverter Washing Machine</li>
+            <li>Non-Inverter Washing Machine</li>
+            <li>All Types of Washing Machine Repairing</li>
+        </ul>
+
+    </div>
+
+
+    <!-- RO -->
+    <div class="service-detail" id="detail-ro">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>💧 RO Water Purifier Service</h2>
+
+        <ul>
+            <li>RO Servicing</li>
+            <li>RO Installation</li>
+            <li>Filter Changing</li>
+            <li>All Types of RO Repairing</li>
+            <li>All Brands Service Support</li>
+        </ul>
+
+    </div>
+
+
+    <!-- CAMERA -->
+    <div class="service-detail" id="detail-camera">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>📹 CCTV Camera Services</h2>
+
+        <ul>
+            <li>Wireless CCTV</li>
+            <li>PTZ Camera</li>
+            <li>IP CCTV</li>
+            <li>Night Vision Camera</li>
+            <li>HD Surveillance Camera</li>
+            <li>Dome Camera</li>
+            <li>Bullet Camera</li>
+            <li>CCTV Repairing</li>
+            <li>CCTV Installation</li>
+        </ul>
+
+    </div>
+
+
+    <!-- WIRING -->
+    <div class="service-detail" id="detail-wiring">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>⚡ House Wiring & Electrical Work</h2>
+
+        <ul>
+            <li>All Types of House Wiring</li>
+            <li>Inverter Installation</li>
+            <li>Solar Installation</li>
+            <li>Electrical Maintenance</li>
+        </ul>
+
+    </div>
+
+
+    <!-- GEYSER -->
+    <div class="service-detail" id="detail-geyser">
+
+        <button class="close-detail" onclick="closeServices()">✕ Close</button>
+
+        <h2>🚿 Geyser Service</h2>
+
+        <ul>
+            <li>Geyser Repairing</li>
+            <li>Geyser Installation</li>
+            <li>Geyser Servicing</li>
+        </ul>
+
+    </div>
 
 </div>
-
-
-<div class="service-grid">
-
-
-<div class="service-card"
-onclick="openService('ac')">
-
-<div class="service-icon">❄️</div>
-
-<h3>AC</h3>
-
-<p>Window AC & Split AC</p>
-
-</div>
-
-
-<div class="service-card"
-onclick="openService('fridge')">
-
-<div class="service-icon">🧊</div>
-
-<h3>Fridge</h3>
-
-<p>All Type Repairing</p>
-
-</div>
-
-
-<div class="service-card"
-onclick="openService('cooler')">
-
-<div class="service-icon">💨</div>
-
-<h3>Cooler</h3>
-
-<p>All Type Repairing</p>
-
-</div>
-
-
-<div class="service-card"
-onclick="openService('washing')">
-
-<div class="service-icon">🧺</div>
-
-<h3>Washing Machine</h3>
-
-<p>All Type Repairing</p>
-
-</div>
-
-
-<div class="service-card"
-onclick="openService('ro')">
-
-<div class="service-icon">💧</div>
-
-<h3>RO</h3>
-
-<p>Service & Repair</p>
-
-</div>
-
-
-<div class="service-card"
-onclick="openService('cctv')">
-
-<div class="service-icon">📹</div>
-
-<h3>Cameras</h3>
-
-<p>CCTV Installation & Repair</p>
-
-</div>
-
-
-<div class="service-card"
-onclick="openService('wiring')">
-
-<div class="service-icon">⚡</div>
-
-<h3>House Wiring</h3>
-
-<p>Electrical Services</p>
-
-</div>
-
-
-<div class="service-card"
-onclick="openService('geyser')">
-
-<div class="service-icon">🔥</div>
-
-<h3>Geyser</h3>
-
-<p>Repair, Installation & Service</p>
-
-</div>
-
-
-</div>
-
-
-<!-- SERVICE DETAILS -->
-
-<div id="serviceDetails"
-class="service-details">
-
-<h2 id="detailTitle">
-Service Details
-</h2>
-
-<div id="detailContent"></div>
-
-<button
-class="close-btn"
-onclick="closeService()">
-Close
-</button>
-
-</div>
-
-
-</div>
-
 </section>
 
-
-<!-- =========================
-     LOCAL SEO CONTENT
-========================= -->
-
-<section class="local-section">
-
-<div class="container">
-
-<div class="local-content">
-
-<h2>
-Technician Brother – Home Appliance Services in Jammu
-</h2>
-
-<p>
-Looking for AC repair in Jammu, fridge repair in Jammu,
-cooler service, washing machine repair, RO service,
-CCTV services, house wiring or geyser service?
-Technician Brother brings these service categories together
-in one place.
-</p>
-
-
-<h3>AC Repair in Jammu</h3>
-
-<p>
-Our AC service section covers Window AC and Split AC,
-including service, installation, repairing, deep service,
-gas refilling and PCB repairing.
-</p>
-
-
-<h3>Fridge Repair in Jammu</h3>
-
-<p>
-Information for non-inverter and inverter refrigerators,
-single-door and double-door fridges and general refrigerator
-repairing services.
-</p>
-
-
-<h3>Washing Machine Repair in Jammu</h3>
-
-<p>
-Our washing machine section covers automatic,
-semi-automatic, fully automatic, inverter and non-inverter
-washing machines with all-type repairing information.
-</p>
-
-
-<h3>RO, CCTV, Cooler and Geyser Services</h3>
-
-<p>
-Technician Brother also covers RO servicing and installation,
-CCTV camera installation and repair, all-type cooler repairing,
-and geyser repairing, installation and servicing.
-</p>
-
-
-<h3>House Wiring and Installation Services</h3>
-
-<p>
-The electrical services section includes inverter installation,
-solar installation and house wiring information.
-For electrical work, use a qualified professional.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     BUY & SELL
-========================= -->
 
 <section id="buy-sell">
 
 <div class="container">
 
-<div class="section-title">
+    <div class="section-title">
+        <h2>Buy & Sell</h2>
+        <p>Buy or create a local product listing from your browser.</p>
+    </div>
 
-<h2>Buy & Sell Home Appliances</h2>
+    <div class="buy-sell">
 
-<p>
-AC, Fridge, Cooler and Washing Machine
-</p>
+        <div class="buy-box">
+
+            <h3>🛒 Buy</h3>
+
+            <p>
+                Explore home appliances and technical products.
+            </p>
+
+            <div style="margin-top:18px">
+
+                <p>❄️ AC</p>
+                <p>🧊 Fridge</p>
+                <p>💨 Cooler</p>
+                <p>🫧 Washing Machine</p>
+
+            </div>
+
+            <button
+                class="primary-btn"
+                style="border:0;cursor:pointer;margin-top:18px"
+                onclick="showToast('Buy section is ready for products')"
+            >
+                Browse Products
+            </button>
+
+        </div>
+
+
+        <div class="sell-box">
+
+            <h3>📦 Sell</h3>
+
+            <p>
+                Add your appliance details and select photos.
+                Photos are saved locally in this browser.
+            </p>
+
+            <form class="sell-form" onsubmit="saveListing(event)">
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Product name"
+                    required
+                >
+
+                <select id="productCategory" required>
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option>AC</option>
+                    <option>Fridge</option>
+                    <option>Cooler</option>
+                    <option>Washing Machine</option>
+                    <option>Other Appliance</option>
+
+                </select>
+
+                <input
+                    type="number"
+                    id="productPrice"
+                    placeholder="Price ₹"
+                >
+
+                <textarea
+                    id="productDescription"
+                    placeholder="Product details"
+                ></textarea>
+
+                <input
+                    class="photo-input"
+                    type="file"
+                    id="photoInput"
+                    accept="image/*"
+                    multiple
+                >
+
+                <div id="photoPreview" class="photo-preview"></div>
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                    style="border:0;cursor:pointer"
+                >
+                    💾 Save Listing
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="savedListing"
+        style="
+        display:none;
+        margin-top:20px;
+        background:#101010;
+        border:1px solid #292929;
+        border-radius:15px;
+        padding:20px;
+        "
+    >
+
+        <h3>Saved Listing</h3>
+
+        <div id="listingContent"></div>
+
+    </div>
 
 </div>
-
-
-<div class="buy-sell">
-
-
-<!-- BUY -->
-
-<div class="buy-box">
-
-<h3>🛒 Buy</h3>
-
-<p>
-Buy or enquire about AC, fridge, cooler and
-washing machine products.
-</p>
-
-<label class="upload-label">
-
-Select Product Photo
-
-<input
-type="file"
-accept="image/*"
-capture="environment"
-onchange="previewImage(event,'buyPreview')"
->
-
-</label>
-
-<img
-id="buyPreview"
-class="upload-preview"
-alt="Selected product photo"
->
-
-<button
-class="btn btn-primary"
-onclick="buyProduct()">
-
-Contact to Buy
-
-</button>
-
-</div>
-
-
-<!-- SELL -->
-
-<div class="sell-box">
-
-<h3>🏷️ Sell</h3>
-
-<p>
-Want to sell an AC, fridge, cooler or washing machine?
-Select the product photo first.
-</p>
-
-<label class="upload-label">
-
-Upload Product Photo
-
-<input
-type="file"
-accept="image/*"
-capture="environment"
-onchange="previewImage(event,'sellPreview')"
->
-
-</label>
-
-<img
-id="sellPreview"
-class="upload-preview"
-alt="Selected product photo"
->
-
-<button
-class="btn btn-primary"
-onclick="sellProduct()">
-
-Submit Product
-
-</button>
-
-</div>
-
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- =========================
-     PRODUCTS
-========================= -->
 
 <section id="products">
 
 <div class="container">
 
-<div class="section-title">
+    <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Sample product section for the website.</p>
+    </div>
 
-<h2>Home Appliances</h2>
+    <div class="grid">
 
-<p>
-Featured categories
-</p>
+        <div class="card product-card">
 
-</div>
+            <div class="product-image">❄️</div>
 
+            <div class="product-info">
 
-<div class="products">
+                <h3>Air Conditioner</h3>
 
+                <div class="price">₹25,000</div>
 
-<div class="product">
+                <p>Home AC product listing.</p>
 
-<div class="product-image">
-❄️
-</div>
+                <button
+                    class="cart-btn"
+                    onclick="showToast('Product added to cart')"
+                >
+                    Add to Cart
+                </button>
 
-<div class="product-info">
+            </div>
 
-<h3>AC</h3>
-
-<div class="price">
-Contact for Price
-</div>
-
-<p>
-Window AC and Split AC products.
-</p>
-
-</div>
-
-</div>
+        </div>
 
 
-<div class="product">
+        <div class="card product-card">
 
-<div class="product-image">
-🧊
-</div>
+            <div class="product-image">🧊</div>
 
-<div class="product-info">
+            <div class="product-info">
 
-<h3>Fridge</h3>
+                <h3>Refrigerator</h3>
 
-<div class="price">
-Contact for Price
-</div>
+                <div class="price">₹18,000</div>
 
-<p>
-Inverter, non-inverter and double-door options.
-</p>
+                <p>Home refrigerator listing.</p>
 
-</div>
+                <button
+                    class="cart-btn"
+                    onclick="showToast('Product added to cart')"
+                >
+                    Add to Cart
+                </button>
 
-</div>
+            </div>
 
-
-<div class="product">
-
-<div class="product-image">
-💨
-</div>
-
-<div class="product-info">
-
-<h3>Cooler</h3>
-
-<div class="price">
-Contact for Price
-</div>
-
-<p>
-Different types of air coolers.
-</p>
-
-</div>
-
-</div>
+        </div>
 
 
-<div class="product">
+        <div class="card product-card">
 
-<div class="product-image">
-🧺
-</div>
+            <div class="product-image">💨</div>
 
-<div class="product-info">
+            <div class="product-info">
 
-<h3>Washing Machine</h3>
+                <h3>Air Cooler</h3>
 
-<div class="price">
-Contact for Price
-</div>
+                <div class="price">₹8,500</div>
 
-<p>
-Automatic and semi-automatic options.
-</p>
+                <p>Home cooler product listing.</p>
 
-</div>
+                <button
+                    class="cart-btn"
+                    onclick="showToast('Product added to cart')"
+                >
+                    Add to Cart
+                </button>
 
-</div>
+            </div>
 
+        </div>
+
+
+        <div class="card product-card">
+
+            <div class="product-image">🫧</div>
+
+            <div class="product-info">
+
+                <h3>Washing Machine</h3>
+
+                <div class="price">₹15,000</div>
+
+                <p>Washing machine product listing.</p>
+
+                <button
+                    class="cart-btn"
+                    onclick="showToast('Product added to cart')"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
-
-</div>
-
 </section>
 
-
-<!-- =========================
-     WHY US
-========================= -->
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Why Technician Brother?</h2>
-
-<p>
-Home appliance information in one place
-</p>
-
-</div>
-
-
-<div class="features">
-
-
-<div class="feature">
-
-<div class="feature-icon">
-🔧
-</div>
-
-<h3>Multiple Services</h3>
-
-<p>
-AC, fridge, cooler, washing machine and more.
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">
-📍
-</div>
-
-<h3>Jammu Focus</h3>
-
-<p>
-Service information focused on Jammu.
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">
-📚
-</div>
-
-<h3>Useful Guides</h3>
-
-<p>
-Simple appliance information and service details.
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">
-🏠
-</div>
-
-<h3>Home Appliances</h3>
-
-<p>
-Many appliance categories under one website.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     GUIDES
-========================= -->
 
 <section id="guides">
 
 <div class="container">
 
-<div class="section-title">
+    <div class="section-title">
+        <h2>Technician Guides</h2>
+        <p>Useful home appliance information.</p>
+    </div>
 
-<h2>Technician Guides</h2>
+    <div class="guide-list">
 
-<p>
-Helpful home appliance information
-</p>
+        <div class="guide">
+            <h3>AC Maintenance Guide</h3>
+            <p>
+                Basic information about AC service, maintenance and common
+                appliance issues.
+            </p>
+            <a href="#services">View AC Services →</a>
+        </div>
 
-</div>
+        <div class="guide">
+            <h3>Fridge Maintenance</h3>
+            <p>
+                Learn about different refrigerator types and service needs.
+            </p>
+            <a href="#services">View Fridge Services →</a>
+        </div>
 
+        <div class="guide">
+            <h3>RO Maintenance</h3>
+            <p>
+                Information about RO servicing and filter replacement.
+            </p>
+            <a href="#services">View RO Services →</a>
+        </div>
 
-<div class="guides">
+        <div class="guide">
+            <h3>Washing Machine Guide</h3>
+            <p>
+                Information about automatic and semi-automatic washing machines.
+            </p>
+            <a href="#services">View Washing Machine →</a>
+        </div>
 
+        <div class="guide">
+            <h3>CCTV Guide</h3>
+            <p>
+                Learn about different CCTV camera types and installation.
+            </p>
+            <a href="#services">View Camera Services →</a>
+        </div>
 
-<div class="guide">
+        <div class="guide">
+            <h3>House Wiring</h3>
+            <p>
+                General information about house wiring, inverter and solar work.
+            </p>
+            <a href="#services">View Wiring Services →</a>
+        </div>
 
-<h3>❄️ AC Service Guide</h3>
-
-<p>
-Information about AC service, installation,
-deep service, gas refilling and professional repair.
-</p>
-
-</div>
-
-
-<div class="guide">
-
-<h3>🧊 Fridge Guide</h3>
-
-<p>
-Information about inverter, non-inverter,
-single-door and double-door refrigerators.
-</p>
-
-</div>
-
-
-<div class="guide">
-
-<h3>🧺 Washing Machine Guide</h3>
-
-<p>
-Information about automatic, semi-automatic,
-fully automatic and inverter washing machines.
-</p>
-
-</div>
-
-
-<div class="guide">
-
-<h3>💧 RO Guide</h3>
-
-<p>
-Information about RO servicing, installation
-and filter changing.
-</p>
-
-</div>
-
-
-<div class="guide">
-
-<h3>📹 CCTV Guide</h3>
-
-<p>
-Information about wireless, IP, PTZ, dome,
-bullet and night-vision CCTV cameras.
-</p>
+    </div>
 
 </div>
-
-
-<div class="guide">
-
-<h3>🔥 Geyser Guide</h3>
-
-<p>
-General information about geyser servicing,
-installation and repairing.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
-
-<section class="contact" id="contact">
+<section>
 
 <div class="container">
 
-<div class="contact-box">
+    <div class="section-title">
+        <h2>Why Technician Brother?</h2>
+    </div>
 
-<h2>Contact Technician Brother</h2>
+    <div class="features">
 
-<p>
-For AC, Fridge, Cooler, Washing Machine, RO,
-CCTV, Geyser and other services.
-</p>
+        <div class="feature">
+            <div class="icon">🔧</div>
+            <strong>Technical Information</strong>
+            <p>Useful appliance and service information.</p>
+        </div>
 
-<p>
-📍 Jammu
-</p>
+        <div class="feature">
+            <div class="icon">📍</div>
+            <strong>Jammu Focused</strong>
+            <p>Website content focused on Jammu services.</p>
+        </div>
 
+        <div class="feature">
+            <div class="icon">📱</div>
+            <strong>Mobile Friendly</strong>
+            <p>Designed to work comfortably on phones.</p>
+        </div>
 
-<div class="contact-numbers">
+        <div class="feature">
+            <div class="icon">🏠</div>
+            <strong>Home Appliances</strong>
+            <p>Multiple home appliance categories in one place.</p>
+        </div>
 
-<a
-href="tel:9149975153"
-class="phone-btn">
-
-📞 9149975153
-
-</a>
-
-
-<a
-href="tel:7006850660"
-class="phone-btn">
-
-📞 7006850660
-
-</a>
-
-</div>
+    </div>
 
 </div>
-
-</div>
-
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<section>
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>Technician Brother Jammu</h2>
+    </div>
+
+    <div class="seo-content">
+
+        <p>
+            Technician Brother is a home appliance and technical services
+            information website focused on Jammu. Find information about
+            AC repair, AC service, fridge repair, cooler repair, washing
+            machine repair, RO service, CCTV camera installation, house
+            wiring and geyser service.
+        </p>
+
+        <h3>AC Repair & Service in Jammu</h3>
+
+        <p>
+            Technician Brother provides information about Window AC and
+            Split AC service, installation, deep service, gas refilling
+            and PCB repairing.
+        </p>
+
+        <h3>Fridge Repair in Jammu</h3>
+
+        <p>
+            Information is available for inverter, non-inverter, single-door
+            and double-door refrigerator repairing.
+        </p>
+
+        <h3>Washing Machine Repair in Jammu</h3>
+
+        <p>
+            Find information about automatic, semi-automatic, fully automatic,
+            inverter and non-inverter washing machine repair.
+        </p>
+
+        <h3>RO Service in Jammu</h3>
+
+        <p>
+            RO servicing, installation, filter changing and repair information
+            for different brands and types of RO systems.
+        </p>
+
+        <h3>CCTV Camera Services</h3>
+
+        <p>
+            Information about wireless CCTV, PTZ, IP CCTV, night vision,
+            HD surveillance, dome and bullet cameras.
+        </p>
+
+        <h3>House Wiring & Electrical Services</h3>
+
+        <p>
+            Information about house wiring, inverter installation and
+            solar installation.
+        </p>
+
+    </div>
+
+</div>
+</section>
+
+
+<section id="contact">
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>Contact Technician Brother</h2>
+        <p>For service enquiries, contact the numbers below.</p>
+    </div>
+
+    <div class="contact-box">
+
+        <h3>📞 Contact Numbers</h3>
+
+        <div class="phone-list">
+
+            <a class="phone" href="tel:9149975153">
+                📞 9149975153
+            </a>
+
+            <a class="phone" href="tel:7006850660">
+                📞 7006850660
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+</main>
+
 
 <footer>
 
 <div class="container">
 
-<div class="footer-grid">
+    <div class="footer-grid">
 
+        <div>
+            <h3>Technician Brother</h3>
 
-<div>
+            <p>
+                Home appliance, electrical and technical service information
+                for Jammu.
+            </p>
+        </div>
 
-<h3>Technician Brother</h3>
+        <div>
+            <h3>Services</h3>
 
-<p>
-Home appliance service and technician information
-for Jammu.
-</p>
+            <ul>
+                <li>AC Repair</li>
+                <li>Fridge Repair</li>
+                <li>Cooler Repair</li>
+                <li>RO Service</li>
+                <li>CCTV Services</li>
+            </ul>
+        </div>
 
-</div>
+        <div>
+            <h3>Quick Links</h3>
 
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#buy-sell">Buy & Sell</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
-<div>
+    </div>
 
-<h3>Services</h3>
-
-<a href="#services">AC Repair</a>
-<a href="#services">Fridge Repair</a>
-<a href="#services">Cooler Repair</a>
-<a href="#services">Washing Machine</a>
-
-</div>
-
-
-<div>
-
-<h3>More</h3>
-
-<a href="#buy-sell">Buy & Sell</a>
-<a href="#products">Products</a>
-<a href="#guides">Guides</a>
-<a href="#contact">Contact</a>
-
-</div>
-
-
-</div>
-
-
-<div class="copyright">
-
-© 2026 Technician Brother. All rights reserved.
-
-</div>
+    <div class="copyright">
+        © 2026 Technician Brother Jammu. All rights reserved.
+    </div>
 
 </div>
 
 </footer>
 
 
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+<div id="toast"></div>
+
 
 <script>
 
+/* TOAST */
+function showToast(message){
 
-/* =========================
-   SERVICE DETAILS
-========================= */
+    const toast = document.getElementById("toast");
 
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    setTimeout(function(){
+
+        toast.classList.remove("show");
+
+    },2500);
+}
+
+
+/* SERVICES */
 function openService(service){
 
-    const box =
-    document.getElementById("serviceDetails");
+    document.querySelectorAll(".service-detail").forEach(function(box){
 
-    const title =
-    document.getElementById("detailTitle");
+        box.classList.remove("active");
 
-    const content =
-    document.getElementById("detailContent");
+    });
 
+    const selected = document.getElementById("detail-" + service);
 
-    let html = "";
+    if(selected){
 
+        selected.classList.add("active");
 
-    /* AC */
-
-    if(service === "ac"){
-
-        title.innerText =
-        "AC Services in Jammu";
-
-        html = `
-
-        <div class="visit-charge">
-        Visiting Charge: ₹300
-        </div>
-
-        <div class="detail-grid">
-
-        <div class="detail-box">
-
-        <h3>❄️ Window AC</h3>
-
-        <p>✓ AC Service</p>
-        <p>✓ AC Installation</p>
-        <p>✓ Repairing</p>
-        <p>✓ Gas Refilling</p>
-
-        </div>
-
-
-        <div class="detail-box">
-
-        <h3>❄️ Split AC</h3>
-
-        <p>✓ Installation</p>
-        <p>✓ Service</p>
-        <p>✓ Deep Service</p>
-        <p>✓ Gas Refilling</p>
-        <p>✓ PCB Repairing</p>
-
-        </div>
-
-        </div>
-
-        `;
+        selected.scrollIntoView({
+            behavior:"smooth",
+            block:"center"
+        });
 
     }
 
+}
 
-    /* FRIDGE */
 
-    else if(service === "fridge"){
+function closeServices(){
 
-        title.innerText =
-        "Fridge Repair in Jammu";
+    document.querySelectorAll(".service-detail").forEach(function(box){
 
-        html = `
+        box.classList.remove("active");
 
-        <div class="detail-box">
-
-        <h3>🧊 All Type Fridge Repairing</h3>
-
-        <p>✓ Non-Inverter Fridge</p>
-        <p>✓ Inverter Fridge</p>
-        <p>✓ Single Door Fridge</p>
-        <p>✓ Double Door Fridge</p>
-        <p>✓ All Type Repairing</p>
-        <p>✓ Major Fridge Problems</p>
-
-        </div>
-
-        `;
-
-    }
-
-
-    /* COOLER */
-
-    else if(service === "cooler"){
-
-        title.innerText =
-        "Cooler Service in Jammu";
-
-        html = `
-
-        <div class="detail-box">
-
-        <h3>💨 All Type of Cooler</h3>
-
-        <p>✓ All Type of Cooler</p>
-        <p>✓ Cooler Repairing</p>
-        <p>✓ Cooler Service</p>
-        <p>✓ Cooler Maintenance</p>
-        <p>✓ All Type Repairing</p>
-
-        </div>
-
-        `;
-
-    }
-
-
-    /* WASHING MACHINE */
-
-    else if(service === "washing"){
-
-        title.innerText =
-        "Washing Machine Repair in Jammu";
-
-        html = `
-
-        <div class="detail-box">
-
-        <h3>🧺 All Type Washing Machine Repairing</h3>
-
-        <p>✓ Automatic</p>
-        <p>✓ Semi Automatic</p>
-        <p>✓ Fully Automatic</p>
-        <p>✓ Inverter Type</p>
-        <p>✓ Non-Inverter Type</p>
-        <p>✓ All Type Repairing</p>
-
-        </div>
-
-        `;
-
-    }
-
-
-    /* RO */
-
-    else if(service === "ro"){
-
-        title.innerText =
-        "RO Services in Jammu";
-
-        html = `
-
-        <div class="detail-box">
-
-        <h3>💧 RO Services</h3>
-
-        <p>✓ Servicing</p>
-        <p>✓ Installation</p>
-        <p>✓ Filter Changing</p>
-        <p>✓ All Type of Repairing</p>
-        <p>✓ All Brands</p>
-
-        </div>
-
-        `;
-
-    }
-
-
-    /* CCTV */
-
-    else if(service === "cctv"){
-
-        title.innerText =
-        "CCTV Camera Services in Jammu";
-
-        html = `
-
-        <div class="detail-box">
-
-        <h3>📹 CCTV Cameras</h3>
-
-        <p>✓ Wireless CCTV Camera</p>
-        <p>✓ PTZ CCTV Camera</p>
-        <p>✓ IP CCTV Camera</p>
-        <p>✓ Night Vision Camera</p>
-        <p>✓ HD Surveillance Camera</p>
-        <p>✓ Dome CCTV Camera</p>
-        <p>✓ Bullet CCTV Camera</p>
-        <p>✓ All Type Repairing</p>
-        <p>✓ Installation</p>
-
-        </div>
-
-        `;
-
-    }
-
-
-    /* HOUSE WIRING */
-
-    else if(service === "wiring"){
-
-        title.innerText =
-        "House Wiring Services in Jammu";
-
-        html = `
-
-        <div class="detail-box">
-
-        <h3>⚡ Electrical Services</h3>
-
-        <p>✓ Inverter Installation</p>
-        <p>✓ Solar Installation</p>
-        <p>✓ All Type of House Wiring</p>
-
-        </div>
-
-        `;
-
-    }
-
-
-    /* GEYSER */
-
-    else if(service === "geyser"){
-
-        title.innerText =
-        "Geyser Services in Jammu";
-
-        html = `
-
-        <div class="detail-box">
-
-        <h3>🔥 Geyser Services</h3>
-
-        <p>✓ Repairing</p>
-        <p>✓ Installation</p>
-        <p>✓ Servicing</p>
-
-        </div>
-
-        `;
-
-    }
-
-
-    content.innerHTML = html;
-
-    box.classList.add("show");
-
-    box.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
     });
 
 }
 
 
-/* CLOSE SERVICE */
+/* SEARCH */
+function searchSite(){
 
-function closeService(){
+    const input = document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
 
-    document
-    .getElementById("serviceDetails")
-    .classList.remove("show");
+    if(!input){
 
-}
+        showToast("Type something to search");
 
-
-/* =========================
-   PHOTO PREVIEW
-========================= */
-
-function previewImage(event, previewId){
-
-    const file =
-    event.target.files[0];
-
-    if(!file){
         return;
     }
 
-    const preview =
-    document.getElementById(previewId);
 
-    const reader =
-    new FileReader();
+    const serviceMap = {
 
-    reader.onload = function(e){
-
-        preview.src =
-        e.target.result;
-
-        preview.style.display =
-        "block";
+        ac:"ac",
+        "air conditioner":"ac",
+        fridge:"fridge",
+        refrigerator:"fridge",
+        cooler:"cooler",
+        "washing machine":"washing",
+        washing:"washing",
+        ro:"ro",
+        cctv:"camera",
+        camera:"camera",
+        cameras:"camera",
+        wiring:"wiring",
+        "house wiring":"wiring",
+        geyser:"geyser"
 
     };
 
-    reader.readAsDataURL(file);
+
+    for(const key in serviceMap){
+
+        if(input.includes(key)){
+
+            openService(serviceMap[key]);
+
+            return;
+
+        }
+
+    }
+
+
+    showToast("Search result not found. Try AC, Fridge, RO, CCTV...");
 
 }
 
 
-/* =========================
-   BUY BUTTON
-========================= */
+/* PHOTO STORAGE */
+let selectedPhotos = [];
 
-function buyProduct(){
 
-    alert(
-        "Product photo selected. " +
-        "For purchase enquiry, please contact Technician Brother."
-    );
+/* PHOTO INPUT */
+document
+    .getElementById("photoInput")
+    .addEventListener("change", function(event){
+
+        const files = Array.from(event.target.files);
+
+        selectedPhotos = [];
+
+        files.forEach(function(file){
+
+            if(!file.type.startsWith("image/")){
+
+                return;
+
+            }
+
+            const reader = new FileReader();
+
+            reader.onload = function(e){
+
+                selectedPhotos.push(e.target.result);
+
+                renderPhotoPreview();
+
+            };
+
+            reader.readAsDataURL(file);
+
+        });
+
+    });
+
+
+/* PHOTO PREVIEW */
+function renderPhotoPreview(){
+
+    const container =
+        document.getElementById("photoPreview");
+
+    container.innerHTML = "";
+
+    selectedPhotos.forEach(function(src,index){
+
+        const item =
+            document.createElement("div");
+
+        item.className = "preview-item";
+
+
+        const img =
+            document.createElement("img");
+
+        img.src = src;
+
+
+        const remove =
+            document.createElement("button");
+
+        remove.className = "remove-photo";
+
+        remove.textContent = "×";
+
+        remove.onclick = function(){
+
+            selectedPhotos.splice(index,1);
+
+            renderPhotoPreview();
+
+        };
+
+
+        item.appendChild(img);
+
+        item.appendChild(remove);
+
+        container.appendChild(item);
+
+    });
 
 }
 
 
-/* =========================
-   SELL BUTTON
-========================= */
+/* SAVE LISTING */
+function saveListing(event){
 
-function sellProduct(){
+    event.preventDefault();
 
-    alert(
-        "Product photo selected. " +
-        "The online selling/listing system will be connected here."
-    );
+
+    const name =
+        document.getElementById("productName").value;
+
+    const category =
+        document.getElementById("productCategory").value;
+
+    const price =
+        document.getElementById("productPrice").value;
+
+    const description =
+        document.getElementById("productDescription").value;
+
+
+    const listing = {
+
+        name:name,
+
+        category:category,
+
+        price:price,
+
+        description:description,
+
+        photos:selectedPhotos,
+
+        savedAt:new Date().toISOString()
+
+    };
+
+
+    try{
+
+        localStorage.setItem(
+            "technicianBrotherListing",
+            JSON.stringify(listing)
+        );
+
+        showToast("Listing saved on this device");
+
+        displayListing(listing);
+
+    }catch(error){
+
+        showToast(
+            "Photos are too large for browser storage"
+        );
+
+    }
 
 }
 
 
-/* =========================
-   SEARCH
-========================= */
+/* DISPLAY SAVED LISTING */
+function displayListing(listing){
 
-function searchSite(){
+    const box =
+        document.getElementById("savedListing");
 
-    const input =
-    document
-    .getElementById("searchBox")
-    .value
-    .toLowerCase()
-    .trim();
+    const content =
+        document.getElementById("listingContent");
 
 
-    if(input === ""){
-        return;
-    }
+    let photosHTML = "";
 
+    if(listing.photos && listing.photos.length){
 
-    if(
-        input.includes("ac") ||
-        input.includes("air conditioner") ||
-        input.includes("split") ||
-        input.includes("window")
-    ){
+        photosHTML =
+            '<div class="photo-preview">';
 
-        openService("ac");
+        listing.photos.forEach(function(photo){
 
-    }
+            photosHTML +=
+                '<div class="preview-item">' +
+                '<img src="' + photo + '">' +
+                '</div>';
 
+        });
 
-    else if(
-        input.includes("fridge") ||
-        input.includes("refrigerator")
-    ){
-
-        openService("fridge");
+        photosHTML += "</div>";
 
     }
 
 
-    else if(
-        input.includes("cooler")
-    ){
+    content.innerHTML =
 
-        openService("cooler");
+        "<p><strong>Product:</strong> " +
+        escapeHTML(listing.name) +
+        "</p>" +
 
-    }
+        "<p><strong>Category:</strong> " +
+        escapeHTML(listing.category) +
+        "</p>" +
 
+        "<p><strong>Price:</strong> ₹" +
+        escapeHTML(listing.price || "Not specified") +
+        "</p>" +
 
-    else if(
-        input.includes("washing") ||
-        input.includes("machine")
-    ){
+        "<p><strong>Details:</strong> " +
+        escapeHTML(listing.description || "No details") +
+        "</p>" +
 
-        openService("washing");
-
-    }
-
-
-    else if(
-        input.includes("ro") ||
-        input.includes("water purifier")
-    ){
-
-        openService("ro");
-
-    }
+        photosHTML;
 
 
-    else if(
-        input.includes("cctv") ||
-        input.includes("camera")
-    ){
+    box.style.display = "block";
 
-        openService("cctv");
-
-    }
+}
 
 
-    else if(
-        input.includes("wiring") ||
-        input.includes("solar") ||
-        input.includes("inverter")
-    ){
+/* LOAD SAVED LISTING */
+window.addEventListener("DOMContentLoaded",function(){
 
-        openService("wiring");
+    try{
 
-    }
+        const saved =
+            localStorage.getItem(
+                "technicianBrotherListing"
+            );
 
+        if(saved){
 
-    else if(
-        input.includes("geyser")
-    ){
+            const listing =
+                JSON.parse(saved);
 
-        openService("geyser");
+            displayListing(listing);
+
+        }
+
+    }catch(error){
+
+        console.log(error);
 
     }
+
+});
+
+
+/* ESCAPE HTML */
+function escapeHTML(value){
+
+    return String(value)
+
+        .replace(/&/g,"&amp;")
+
+        .replace(/</g,"&lt;")
+
+        .replace(/>/g,"&gt;")
+
+        .replace(/"/g,"&quot;")
+
+        .replace(/'/g,"&#039;");
 
 }
 
 </script>
-
 
 </body>
 </html>
